@@ -116,7 +116,7 @@ You can use *System Information* to determine whether Credential Guard is runnin
 You can use PowerShell to determine whether Credential Guard is running on a device. From an elevated PowerShell session, use the following command:
 
 ```powershell
-(Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard).SecurityServicesRunning
+(Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard).SecurityFeaturesEnabled
 ```
 
 The command generates the following output:
